@@ -6,21 +6,31 @@ using System.Threading.Tasks;
 
 namespace LibraryAgain.Models
 {
-    public class Book
+    public class Book<T>
     {
         public string AuthorName { get; set; }
-        public string tName { get; set; }
-        public string Title { get; set; }
+        public string Name { get; set; }
         public int PageCount { get; set; }
-    }
+        public int Id { get; private set; }
+        public string Code { get; private set; }
+        
+        
+       
+        
+        private Book()
 
-    List<Book> lstBooks = new List<Book>();
-    lstBooks.Add(new Book()
-    {
-        AuthorLastName = "What",
-                AuthorFirstName = "Ever",
-                Title = Whatever
-                Year = 2012;
+
+        {
+           
+            Code = Name[0].ToString().ToUpper() + Id;
+        }
+
+        public Book(string name, string authorName, int pageCount) : this()
+        {
+            Name = name;
+            AuthorName = authorName;
+            PageCount = pageCount;
+        }
     }
 }
 

@@ -4,17 +4,19 @@ using LibraryAgain.Models;
 
 namespace LibraryAgain
 {
-    internal class Program
+    public class Program<T>
     {
-        static void Main(string[] args)
+        static void main(string[] args)
         {
-          List<Book> booklist = new List<Book>();
+            /*
+            list<boohk> booklist = new List<boohk>();
 
-            Book book1 = new Book("Harry", "Potter");
-            Book book2 = new Book("Sophie's", "World");
-            booklist.Add(book1);
-            booklist.Add(book2);
-            booklist.FindAllBooksByName("Harry""Potter")
+            book book1 = new book("harry", "potter");
+            boohk book2 = new boohk("sophie's", "world");
+            booklist.add(book1);
+            booklist.add(book2);
+            */
+           
         }
     }
 }
